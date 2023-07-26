@@ -17,9 +17,11 @@ PLS NOTE: I'm using free trial on sms notification.
 # How to run
 
 - Clone the repo
-- Yarn or npm install
+- Yarn or npm install 
 - create .env file and copy the .env.example file ( send me an email for the values of env )
-- yarn android / yarn ios or npm start
+- cd ios > pod install
+- run on root folder yarn android / yarn ios or npm start
+
 
 # How to test
 
@@ -32,5 +34,4 @@ PLS NOTE: I'm using free trial on sms notification.
 
 Screenshots 
 
-  ![Screen Shot 2023-07-26 at 11 18 05 PM](https://github.com/jomarx44/myApp/assets/74890149/9d544c9b-9f84-43e7-bdd9-e133bf14f615)
-     ![Screen Shot 2023-07-26 at 11 18 36 PM](https://github.com/jomarx44/myApp/assets/74890149/c20a2f26-38ab-490e-8925-3cb607ce391f)
+<img width="611" alt="Screen Shot 2023-07-27 at 12 48 10 AM" src="https://github.com/jomarx44/myApp/assets/74890149/66356920-dc83-4b08-9c86-0d356faf738a">
