@@ -34,4 +34,6 @@ PLS NOTE: I'm using free trial on sms notification.
 
 Screenshots 
 
-<img width="611" alt="Screen Shot 2023-07-27 at 12 48 10 AM" src="https://github.com/jomarx44/myApp/assets/74890149/66356920-dc83-4b08-9c86-0d356faf738a">
+
+<img width="611" alt="Screen Shot 2023-07-27 at 12 48 10 AM" src="https://github.com/jomarx44/myApp/assets/74890149/b1b66439-4ec2-4849-ae12-6f9da2112e61">
+
