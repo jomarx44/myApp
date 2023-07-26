@@ -10,17 +10,26 @@ import {
 
 function* sendSMS({ payload }) {
   const { to, message } = payload
+  let details = {
+    To: to,
+    From: TWILIO_PHONE_NUMBER,
+    Body: message
+  }
+  let formBody = []
+  for (let property in details) {
+    var encodedKey = encodeURIComponent(property)
+    var encodedValue = encodeURIComponent(details[property])
+    formBody.push(encodedKey + '=' + encodedValue)
+  }
+  formBody = formBody.join('&')
   try {
     fetch(`${TWILIO_BASEURL}/Accounts/${TWILIO_ACCOUNT_SID}/Messages.json`, {
       method: 'POST',
       headers: {
-        Authorization: `Basic ${TWILIO_AUTHORIZATION}`
+        Authorization: `Basic ${TWILIO_AUTHORIZATION}==`,
+        'Content-Type': 'application/x-www-form-urlencoded'
       },
-      body: new URLSearchParams({
-        To: to,
-        From: TWILIO_PHONE_NUMBER,
-        Body: message
-      })
+      body: formBody
     })
       .then(res => res.json())
       .then(data => console.log('RESPONSE !', data))

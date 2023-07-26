@@ -18,7 +18,7 @@ export default ItexTextInput
 
 const styles = StyleSheet.create({
   textInput: {
-    paddingLeft: 10,
+    padding: 10,
     backgroundColor: '#fff',
     borderWidth: 1,
     borderRadius: 10,
